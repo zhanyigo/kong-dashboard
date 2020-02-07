@@ -42,6 +42,8 @@ gulp.task('copy_assets', function(done) {
     .pipe(gulp.dest(paths.dist + '/images'));
   gulp.src(['node_modules/materialize-css/dist/fonts/roboto/**/*'])
     .pipe(gulp.dest(paths.dist + '/fonts/roboto'));
+  gulp.src(['src/css/**'])
+    .pipe(gulp.dest(paths.dist + '/css'));
   done();
 });
 
